@@ -1,6 +1,4 @@
-import 'package:ayurcare/presentation/routes/routes.dart';
-import 'package:ayurcare/screens/Login_screen.dart';
-import 'package:ayurcare/screens/splash_screen.dart';
+import 'package:ayurcare/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,24 +8,16 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
-  // initialRoute: AppRoutes.splash,
-  // routes: {
-  //   AppRoutes.splash: (_) => SplashScreen(),
-  //   AppRoutes.login: (_) => const LoginScreen(),
-  // },
-
-
-    
+      debugShowCheckedModeBanner: false,
       title: 'AyurCare',
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: LoginScreen()
+      home: SplashScreen()
     );
   }
 }

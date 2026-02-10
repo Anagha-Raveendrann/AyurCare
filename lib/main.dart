@@ -1,3 +1,4 @@
+import 'package:ayurcare/presentation/screens/login_screen.dart';
 import 'package:ayurcare/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: SplashScreen()
+      home: LoginScreen()
     );
   }
 }
